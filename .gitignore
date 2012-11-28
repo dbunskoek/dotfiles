@@ -1,0 +1,18 @@
+# OS X
+.DS_Store
+
+# Python
+*.pyc
+*.egg-info
+dist
+
+# PyCharm
+.idea
+
+# Sublime Text 2
+*.sublime-project
+*.sublime-workspace
+.codeintel
+
+# project files
+.sass-cache

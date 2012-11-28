@@ -1,0 +1,21 @@
+[user]
+    name = Dennis Bunskoek
+    email = dbunskoek@leukeleu.nl
+
+[core]
+    excludesfile = ~/.gitignore
+
+[color]
+    ui = true
+
+[alias]
+    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    la = !git l --all
+    s = status -s
+    c = commit -am
+    a = add
+    co = checkout
+    br = branch
+    ps = push
+    pl = pull
+    f = fetch
