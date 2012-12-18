@@ -1,13 +1,17 @@
 #!/bin/bash
 
 echo "symlinking .bash_profile"
-ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
+[ ! -f ~/.bash_profile ] && ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 
 echo "symlinking .aliases"
-ln -s ~/.dotfiles/.aliases ~/.aliases
+[ ! -f ~/.aliases ] && ln -s ~/.dotfiles/.aliases ~/.aliases
 
 echo "symlinking .gitignore"
-ln -s ~/.dotfiles/.gitignore ~/.gitignore
+[ ! -f ~/.gitignore ] && ln -s ~/.dotfiles/.gitignore ~/.gitignore
 
 echo "symlinking .gitconfig"
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+[ ! -f ~/.gitconfig ] && ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
+echo "symlinking Sublime Text 2 preferences and keymap"
+[ ! -f ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings ] && ln -s ~/.dotfiles/Sublime\ Text\ 2/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings
+[ ! -f ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap ] && ln -s ~/.dotfiles/Sublime\ Text\ 2/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap

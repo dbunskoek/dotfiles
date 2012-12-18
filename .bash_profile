@@ -3,4 +3,6 @@ export LANG=en_US.UTF-8
 
 export CLICOLOR=1
 
+export EDITOR=/usr/bin/nano
+
 source ~/.aliases
