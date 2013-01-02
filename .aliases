@@ -1,3 +1,20 @@
 alias ll='ls -la'
 
 alias subl='open -a "Sublime Text 2"'
+
+# PostgreSQL
+
+alias pgtunnel='ssh -N -L 5555:localhost:5432 -l dbunskoek aluminum-fluoride'
+
+# Django
+
+function rs() {
+  if [ -z "$1" ]; then
+    python manage.py runserver 0:8000
+  else
+    python manage.py runserver 0:"$1"
+  fi
+}
+
+alias sdb='python manage.py syncdb'
+alias sdbm='python manage.py syncdb --migrate'
