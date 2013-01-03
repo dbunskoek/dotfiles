@@ -110,16 +110,6 @@ function set_git_branch {
     BRANCH="${state}(${branch})${remote}${COLOR_NONE} "
 }
 
-# Return the prompt symbol to use, colorized based on the return value of the
-# previous command.
-function set_prompt_symbol () {
-    if test $1 -eq 0 ; then
-        PROMPT_SYMBOL="\$"
-    else
-        PROMPT_SYMBOL="${RED}\$${COLOR_NONE}"
-    fi
-}
-
 # Determine active Python virtualenv details.
 function set_virtualenv () {
     if test -z "$VIRTUAL_ENV" ; then
@@ -131,10 +121,6 @@ function set_virtualenv () {
 
 # Set the full bash prompt.
 function set_bash_prompt () {
-    # Set the PROMPT_SYMBOL variable. We do this first so we don't lose the
-    # return value of the last command.
-    set_prompt_symbol $?
-
     # Set the PYTHON_VIRTUALENV variable.
     set_virtualenv
 
@@ -148,7 +134,7 @@ function set_bash_prompt () {
     # Set the bash prompt variable.
     PS1="
 ${PYTHON_VIRTUALENV}${GREEN}\u@\h ${BLUE}\w${COLOR_NONE} ${BRANCH}
-${PROMPT_SYMBOL} "
+\$ "
 }
 
 # Tell bash to execute this function just before displaying its prompt.
