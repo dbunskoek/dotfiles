@@ -4,7 +4,7 @@ alias subl='open -a "Sublime Text 2"'
 
 # PostgreSQL
 
-alias pgtunnel='ssh -N -L 5555:localhost:5432 -l dbunskoek aluminum-fluoride'
+alias pgtunnel='clear && echo "pgtunnel from localhost:5555 to aluminum-fluoride:5432" && ssh -N -L 5555:localhost:5432 -l dbunskoek aluminum-fluoride'
 
 # Django
 
