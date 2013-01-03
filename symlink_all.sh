@@ -3,6 +3,9 @@
 echo "symlinking .bash_profile"
 [ ! -f ~/.bash_profile ] && ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 
+echo "symlinking .bash_prompt"
+[ ! -f ~/.bash_prompt ] && ln -s ~/.dotfiles/.bash_prompt ~/.bash_prompt
+
 echo "symlinking .aliases"
 [ ! -f ~/.aliases ] && ln -s ~/.dotfiles/.aliases ~/.aliases
 

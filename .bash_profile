@@ -5,4 +5,6 @@ export CLICOLOR=1
 
 export EDITOR=/usr/bin/nano
 
+source ~/.bash_prompt
+
 source ~/.aliases
