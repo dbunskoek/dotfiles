@@ -6,6 +6,13 @@ alias subl='open -a "Sublime Text 2"'
 
 alias pgtunnel='clear && echo "pgtunnel from localhost:5555 to aluminum-fluoride:5432" && ssh -N -L 5555:localhost:5432 -l dbunskoek aluminum-fluoride'
 
+pg-tunnel()
+{
+  clear
+  echo "pgtunnel from localhost:$1 to $2:5432 ..."
+  ssh -N -L $1:localhost:5432 -l leukeleu $2
+}
+
 # Django
 
 function rs() {
