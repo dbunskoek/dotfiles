@@ -9,10 +9,14 @@ dist
 # PyCharm
 .idea
 
-# Sublime Text 2
+# Sublime Text
 *.sublime-project
 *.sublime-workspace
 .codeintel
 
+# Subversion
+.svn
+
 # project files
+site_settings.py
 .sass-cache

@@ -3,7 +3,7 @@
 	email = dbunskoek@leukeleu.nl
 
 [core]
-	excludesfile = /Users/dbunskoek/.gitignore
+	excludesfile = /Users/dbunskoek/.gitignore_global
 
 [color]
     ui = true
