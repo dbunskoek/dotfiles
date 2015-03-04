@@ -1,4 +1,5 @@
 alias ll='ls -la'
+alias subl='open -a "Sublime Text"'
 
 # PostgreSQL
 
