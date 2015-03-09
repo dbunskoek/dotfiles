@@ -3,9 +3,12 @@ alias subl='open -a "Sublime Text"'
 
 # PostgreSQL
 
-pg-tunnel()
+pgtunnel()
 {
+  # example: pgtunnel 5432 d-demo dev.vm1
   clear
   echo "pgtunnel from localhost:$1 to $2@$3:5432 ..."
   ssh -N -L $1:localhost:5432 -l $2 $3
 }
+
+alias cowdump='~/cowdump.sh/cowdump.sh'
