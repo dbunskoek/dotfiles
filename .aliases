@@ -1,9 +1,10 @@
 alias ll='ls -la'
 alias subl='open -a "Sublime Text"'
+alias pgtunnel='ssh -N -L 5432:localhost:5432 leukeleu@dev.vm1'
 
 # PostgreSQL
 
-pgtunnel()
+pgtunnelx()
 {
   # example: pgtunnel 5432 d-demo dev.vm1
   clear

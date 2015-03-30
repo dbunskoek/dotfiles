@@ -8,3 +8,4 @@ export EDITOR=/usr/bin/nano
 source ~/.bash_prompt
 
 source ~/.aliases
+export PATH="/usr/local/sbin:$PATH"
