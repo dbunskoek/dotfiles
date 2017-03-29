@@ -9,3 +9,6 @@ source ~/.bash_prompt
 
 source ~/.aliases
 export PATH="/usr/local/sbin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
