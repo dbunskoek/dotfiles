@@ -12,4 +12,8 @@ pgtunnelx()
   ssh -N -L $1:localhost:5432 -l $2 $3
 }
 
-alias cowdump='~/cowdump.sh/cowdump.sh'
+alias cowdump='~/Utilities/cowdump.sh/cowdump.sh'
+
+alias mountnfs='~/Utilities/mountnfs'
+alias unmountnfs='~/Utilities/unmountnfs'
+alias mountnfs-vpn='~/Utilities/mountnfs-vpn'
